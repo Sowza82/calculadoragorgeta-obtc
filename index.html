@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
-    <link rel="stylesheet" href="calc.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div id="container">
@@ -17,13 +17,13 @@
         <p>Quanto ficou a conta?</p>
         </label>
         <p>
-            R$<input type="number" placeholder="100" name="bill" id="bill" class="formInput">
+            R$<input type="number" placeholder="100" name="bill" id="bill" class="formInput" required>
         </p>
         <label for="serviceQual">
             <p>Como foi o serviço?</p>
         </label>
         <p>
-            <select name="serviceQual1" id="serviceQual"class="formSelect" >
+            <select name="serviceQual" id="serviceQual"class="formSelect">
                 <option disabled selected value="0" >Escolha uma opção</option>
                 <option value="0.3">30% - Incrível</option>
                 <option value="0.2">20% - Bom</option>
@@ -36,7 +36,7 @@
             <p>Quantas pessoas vão dividir a conta?</p>
         </label>
         <p>
-            <input type="number" placeholder="1" name="people" id="people"class="formInput" >pessoa(s)
+            <input type="number" placeholder="1" name="people" id="people"class="formInput" required>pessoa(s)
         </p>
         <button type="submit" class="formSubmit">Calcular</button>
     </form>
@@ -44,9 +44,9 @@
 <div id="totalTip">
 Gorgeta total:
 R$<span id="tip">0.00</span>
-<p id="each">cada</p>
+<span id="each">cada</span>
 </div>
 </div>
-<script type="text/javascript" src="calc.js"></script>
+<script type="text/javascript" src="styles.js"></script>
 </body>
 </html>
